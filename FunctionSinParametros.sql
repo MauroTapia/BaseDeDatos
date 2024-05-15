@@ -1,0 +1,13 @@
+DELIMITER $$
+CREATE FUNCTION sayHello()
+RETURNS VARCHAR(100) DETERMINISTIC
+BEGIN 
+    RETURN 'Hello World';
+END$$
+DELIMITER ;
+
+-- LLamarla
+SELECT sayHello();
+
+-- eliminarla
+DROP FUNCTION sayHello;

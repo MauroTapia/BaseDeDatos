@@ -1,0 +1,12 @@
+DELIMITER $$
+CREATE PROCEDURE sumNumbers(IN num1 INT,IN num2 INT)
+BEGIN 
+	SELECT num1 + num2;
+END$$
+DELIMITER ;
+
+CALL sumNumbers(99, 1);
+
+DROP PROCEDURE insertCategory;
+
+SHOW PROCEDURE status WHERE Db = DATABASE() AND Type= 'PROCEDURE';
