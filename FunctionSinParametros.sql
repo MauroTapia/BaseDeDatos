@@ -10,4 +10,4 @@ DELIMITER ;
 SELECT sayHello();
 
 -- eliminarla
-DROP FUNCTION sayHello;
+DROP FUNCTION sayHello
